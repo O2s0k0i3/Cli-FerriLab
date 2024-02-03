@@ -1,0 +1,48 @@
+% Indica la clase del documento, tiene parámetros opcionales como el tamaño de letra o el de la página.
+\documentclass[10pt]{article}
+% Codificación del idioma en español ya que por defecto está en inglés.
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-tabla]{babel}
+% Permite escribir mejor en modo matemático. Amsmath y xparse son necesarios para que funcione.
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{xparse}
+% Permite hacer subfiguras dentro del mismo entorno figure.
+\usepackage[margin=50pt]{caption}
+\usepackage{subcaption}
+% Permite el trabajar con figuras en latex.
+\usepackage{graphicx}
+\usepackage{wrapfig}
+% Permite manejar colores de manera útil.
+\usepackage{xcolor, colortbl}
+% Define un color que puedes utilizar referenciando el nombre dado.
+\definecolor{lightgray}{rgb}{.76, .76, .76}
+% Permite modificar los márgenes del documento.
+\usepackage[letterpaper,top=1.5cm,bottom=1.5cm,left=1.5cm,right=1cm,marginparwidth=1.75cm]{geometry}
+% Hace que los links o referencias en el texto se muestren en otro color a escoger.
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+% Para ordenar mejor tablas y figuras.
+\usepackage{float}
+% Para crear las bibliografías, cambiando el estilo al deseado.
+\usepackage[backend=biber, sorting=none, style=numeric]{biblatex}
+\usepackage{csquotes}
+\bibliography{referencias}
+% Establece un espacio entre párrafos.
+\setlength{\parskip}{3mm}
+% Para colocar barras diagonales en tablas.
+\usepackage{slashbox}
+
+% Comandos varios personalizados.
+
+\newcommand{\up}[1]{\textsuperscript{#1}}
+\newcommand{\down}[1]{\textsubscript{#1}}
+\newcommand{\diffalign}[2]{\multicolumn{1}{#1}{#2}}
+\newcommand{\espacio}{\text{ }}
+\newcommand{\fig}[1]{Fig. \ref{#1}}
+\newcommand{\eq}[1]{Ec. \eqref{#1}}
+\newcommand{\tab}[1]{Tab. \ref{#1}}
+\newcommand{\propagar}[2]{\qty(\pdv{#1}{#2} \Delta #2)^2}
+
+\title{Title}
+\author{Author}
+\date{DD/MM/YYYY}

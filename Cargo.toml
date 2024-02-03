@@ -1,0 +1,18 @@
+[package]
+name = "cli-ferrilab"
+version = "0.1.0"
+edition = "2021"
+authors = ["Óscar Castro"]
+description = "Command line tool for creating and managing data along with the library FerriLab."
+license = ""
+
+[[bin]]
+name = "ferris"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.4.13", features = ["derive"] }
+confy = "0.5.1"
+serde = { version = "1.0.195", features = ["serde_derive"] }
+
+
