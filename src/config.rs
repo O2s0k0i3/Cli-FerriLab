@@ -11,10 +11,10 @@ pub struct Config {
 impl std::default::Default for Config {
     fn default() -> Self {
         Self {
-            latex: from_utf8(include_bytes!("../templates/latex_template.txt"))
+            latex: from_utf8(include_bytes!("../templates/latex_template.tex"))
                 .unwrap()
                 .to_owned(),
-            typst: from_utf8(include_bytes!("../templates/typst_template.txt"))
+            typst: from_utf8(include_bytes!("../templates/typst_template.typ"))
                 .unwrap()
                 .to_owned(),
             jupyter: from_utf8(include_bytes!("../templates/jupyter.ipynb"))
