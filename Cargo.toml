@@ -4,7 +4,12 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Óscar Castro"]
 description = "Command line tool for creating and managing data along with the library FerriLab."
-license = ""
+license = "MIT"
+repository = "https://github.com/O2s0k0i3/Cli-FerriLab"
+readme = "README.md"
+keywords = ["cli", "ferrilab", "laboratory"]
+
+
 
 [[bin]]
 name = "ferris"
